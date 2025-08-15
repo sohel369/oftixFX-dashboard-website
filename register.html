@@ -105,24 +105,25 @@
         </div>
       </div>
       <div class="step-pane hidden" data-step="3">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <label class="label">Account Type</label>
-            <select class="input">
-              <option class="text-black">Standard</option>
-              <option class="text-black">ECN</option>
-              <option class="text-black">Pro</option>
-            </select>
-          </div>
-          <div>
-            <label class="label">Base Currency</label>
-            <select class="input">
-              <option class="text-black">USD</option>
-              <option class="text-black">EUR</option>
-              <option class="text-black">GBP</option>
-            </select>
-          </div>
-        </div>
+  <div id="previewContainer" class="bg-white/5 p-4 rounded-xl space-y-4">
+    <h2 class="text-xl font-bold text-white">Review Your Information</h2>
+    <div class="grid md:grid-cols-2 gap-4 text-sm">
+      <div><strong>First Name:</strong> <span id="prevFirst"></span></div>
+      <div><strong>Last Name:</strong> <span id="prevLast"></span></div>
+      <div><strong>Email:</strong> <span id="prevEmail"></span></div>
+      <div><strong>Phone:</strong> <span id="prevPhone"></span></div>
+      <div><strong>Country:</strong> <span id="prevCountry"></span></div>
+      <div><strong>City:</strong> <span id="prevCity"></span></div>
+      <div class="md:col-span-2"><strong>Address:</strong> <span id="prevAddress"></span></div>
+      <div><strong>Account Type:</strong> <span id="prevAccType"></span></div>
+      <div><strong>Base Currency:</strong> <span id="prevCurrency"></span></div>
+    </div>
+  </div>
+  <label class="inline-flex items-center gap-2 text-sm text-white/70 mt-4">
+    <input type="checkbox" class="checkbox" required /> I confirm the above details are correct
+  </label>
+</div>
+
         <label class="inline-flex items-center gap-2 text-sm text-white/70 mt-4">
           <input type="checkbox" class="checkbox" required /> I agree to the Terms & Conditions
         </label>
