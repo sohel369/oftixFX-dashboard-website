@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" class="bg-brand text-white">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OptixFX — Premium Forex & Trading UI</title>
+  <meta name="description" content="OptixFX premium forex/trading website starter (HTML/CSS/JS)" />
+  <link rel="icon" href="/assets/images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0F172A', // dark slate (background)
+              subtle: '#111827',
+              accent: '#00C2FF',  // electric blue
+              gold: '#E7B008',    // gold highlight
+              success: '#16A34A', // green
+              danger: '#DC2626'   // red
+            }
+          },
+          boxShadow: {
+            soft: '0 8px 30px rgba(0,0,0,0.12)'
+          },
+          borderRadius: {
+            '2xl': '1.25rem'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script defer src="/assets/js/app.js"></script>
+
+</head>
+<body class="min-h-screen">
+<header class="sticky top-0 z-40 border-b border-white/10 backdrop-blur bg-brand/70">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <a class="flex items-center gap-2" href="/index.html">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand.accent to-brand.gold grid place-items-center text-white font-bold">OX</div>
+      <span class="font-semibold tracking-tight text-white">OptixFX</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/account-types.html" class="nav-link">Account Types</a>
+      <a href="/platforms.html" class="nav-link">Platforms</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="themeToggle" class="rounded-xl px-3 py-2 border border-white/10 text-white/80 hover:text-white">Theme</button>
+      <a href="/login.html" class="btn small">Login</a>
+      <a href="/register.html" class="btn-ghost small hidden sm:inline-flex">Open Account</a>
+      <button id="mobileMenuBtn" class="md:hidden text-white/80 hover:text-white" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+    <div class="px-4 py-3 space-y-2 text-sm">
+      <a href="/index.html" class="mobile-link">Home</a>
+      <a href="/account-types.html" class="mobile-link">Account Types</a>
+      <a href="/platforms.html" class="mobile-link">Platforms</a>
+      <a href="/faq.html" class="mobile-link">FAQ</a>
+      <a href="/contact.html" class="mobile-link">Contact</a>
+      <a href="/login.html" class="mobile-link">Login</a>
+      <a href="/register.html" class="mobile-link">Open Account</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block text-brand.gold text-sm font-semibold tracking-widest uppercase">Premium Forex</span>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight">Trade Smarter with <span class="text-brand.accent">OptixFX</span></h1>
+        <p class="mt-4 text-white/70 max-w-xl">Low latency, deep liquidity, and a dashboard designed for precision. Experience a truly modern client area inspired by best-in-class trading platforms.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="/register.html" class="btn">Open Account</a>
+          <a href="/platforms.html" class="btn-ghost">Explore Platforms</a>
+        </div>
+        <div class="mt-10 grid grid-cols-3 gap-4 text-center">
+          <div class="stat-card"><div class="stat-title">Avg. Spread</div><div class="stat-value">0.2 pips</div></div>
+          <div class="stat-card"><div class="stat-title">Execution</div><div class="stat-value">&lt; 20ms</div></div>
+          <div class="stat-card"><div class="stat-title">Instruments</div><div class="stat-value">250+</div></div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-soft ring-1 ring-white/10">
+          <img src="/assets/images/hero-chart.png" alt="Trading chart" class="w-full h-auto">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-brand.subtle/60 backdrop-blur rounded-2xl p-4 ring-1 ring-white/10">
+          <p class="text-xs text-white/70">Live spreads & market depth</p>
+          <p class="font-semibold">Tight spreads. Deep liquidity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold mb-6">Why OptixFX</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="feature-card">
+          <h3>Fast Execution</h3>
+          <p>Edge infrastructure for lightning execution below 20ms.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Secure & Regulated</h3>
+          <p>Bank-grade security and industry-standard compliance.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Multiple Platforms</h3>
+          <p>MT5, cTrader, and our sleek web dashboard.</p>
+        </div>
+        <div class="feature-card">
+          <h3>24/7 Support</h3>
+          <p>Real people. Real expertise. Always on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="rounded-2xl ring-1 ring-white/10 p-6 bg-white/5">
+          <canvas id="homeChart" height="120"></canvas>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold">Transparent market data</h2>
+          <p class="mt-2 text-white/70">Visualize spreads, volatility, and your own performance with clear, responsive charts.</p>
+          <a href="/dashboard.html" class="btn mt-6">View Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="border-t border-white/10 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="font-semibold tracking-tight text-white">OptixFX</span>
+      </div>
+      <p class="text-white/60">Premium forex & trading experience. Tight spreads, deep liquidity, and a sleek dashboard.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Company</h4>
+      <ul class="space-y-2 text-white/70">
+        <li><a class="hover:text-white" href="/about.html">About</a></li>
+        <li><a class="hover:text-white" href="/legal.html">Legal</a></li>
+        <li><a class="hover:text-white" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Trading</h4>
+      <ul class="space-y-2 text-white/70">
+        <li><a class="hover:text-white" href="/platforms.html">Platforms</a></li>
+        <li><a class="hover:text-white" href="/account-types.html">Account Types</a></li>
+        <li><a class="hover:text-white" href="/faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Client Area</h4>
+      <ul class="space-y-2 text-white/70">
+        <li><a class="hover:text-white" href="/dashboard.html">Dashboard</a></li>
+        <li><a class="hover:text-white" href="/deposits.html">Deposit</a></li>
+        <li><a class="hover:text-white" href="/withdrawals.html">Withdrawal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-xs text-white/50 py-5 border-t border-white/10">
+    © 2025 OptixFX. All rights reserved.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script defer src="/assets/js/charts-home.js"></script>
+</body>
+</html>
