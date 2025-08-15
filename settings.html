@@ -8,6 +8,11 @@
   <link rel="icon" href="assets/images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  option{
+    color: #000 !important;
+  }
+  </style>
   <script>
     tailwind.config = {
       theme: {
@@ -83,10 +88,13 @@
       <input type="checkbox" class="checkbox" checked id="darkThemeToggle">
     </div>
     <div>
-      <label class="label">Two Factor Authentication</label>
-      <select class="input"><option>Disabled</option><option>Authenticator App</option><option>SMS</option></select>
+      <label class="label text-color-black">Two Factor Authentication</label>
+      <select class="input text-color-black"><option>Disabled</option>
+        <option class="text-color-black">Authenticator App</option>
+        <option class="text-color-black">SMS</option>
+      </select>
     </div>
-    <button type="button" class="btn">Save</button>
+    <button type="button" class="btn text-color-black">Save</button>
   </form>
 </main>
 <footer class="border-t border-white/10 mt-16">
@@ -117,9 +125,9 @@
     <div>
       <h4 class="text-white font-semibold mb-3">Client Area</h4>
       <ul class="space-y-2 text-white/70">
-        <li><a class="hover:text-white" href="dashboard.html">Dashboard</a></li>
-        <li><a class="hover:text-white" href="deposits.html">Deposit</a></li>
-        <li><a class="hover:text-white" href="withdrawals.html">Withdrawal</a></li>
+        <li><a class="hover:text-white text-color-black" href="dashboard.html">Dashboard</a></li>
+        <li><a class="hover:text-white text-color-black" href="deposits.html">Deposit</a></li>
+        <li><a class="hover:text-white text-color-black" href="withdrawals.html">Withdrawal</a></li>
       </ul>
     </div>
   </div>
